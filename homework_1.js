@@ -15,7 +15,7 @@ function addNumbers (num1, num2) {
   return(result)
 }
 
-var addNumbers = (874, 35)
+var addNumbers = (874, 35)  
 */
 
 // #2 //
