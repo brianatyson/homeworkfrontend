@@ -1,0 +1,84 @@
+<html>
+  <head>
+    <style>
+      nav {
+        text-align: center;
+        background-color: pink;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+      }
+
+      ul nav {
+        margin: 0;
+        padding: 0;
+      }
+
+      nav li {
+        display: inline-block;
+        padding: 0 30px;
+      }
+
+      nav a {
+        color: #ffffff;
+      }
+
+      section {
+        height: 600px;
+        padding: 50px 20px;
+        background-size: cover;
+        background-attachment: fixed;
+  
+      }
+    </style>
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"
+    integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+    crossorigin="anonymous"></script>
+<!---
+    <script>
+    $(document).ready(function() {
+      $(window).scroll(function() {
+        if $(window).scrollTop() > 900 &&
+        $('nav').css("position") != "fixed") {
+        $('nav').hide(function() {
+          $('nav').css("position", "fixed")
+          $('nav').slideDown('1000')
+        })
+      }
+      else if)$(window).scrollTop() <= 900) {
+        $('nav').css('position', 'initial')
+      }
+    })
+  })
+    </script>
+    --->
+  </head>
+
+  <body>
+    <nav>
+      <ul>
+        <li><a href="#home">HOME<a/></li>
+        <li><a href="#about">ABOUT<a/></li>
+        <li><a href="#resume">RESUME<a/></li>
+        <li><a href="#projects">PROJECTS<a/></li>
+      </ul>
+    </nav>
+
+    <section id="home">
+      Content for Section #1!
+    </section>
+
+    <section id="about">
+      Content for Section #2!
+    </section>
+
+    <section id="resume">
+      Content for Section #3!
+    </section>
+
+    <section id="projects">
+      Content for Section #4!
+    </section>
+  </body>
+</html>

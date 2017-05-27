@@ -1,0 +1,55 @@
+CHEAT SHEET
+FUNCTIONS: reusable collections of statements
+
+var calculatorOn = false;
+
+function pressPowerButton() {
+  if (calculatorOn) {
+    console.log('Calculator Turning Off');
+    calculatorOn = false;
+  } else {
+    console.log('Calculator Turning On');
+    calculatorOn = true;
+  }
+}
+
+pressPowerButton();
+//Output: Calculator Turning off
+
+start with JS Keyword - function
+function name = pressPowerButton
+Between the {} is the code block that the function is processing (currently an if/else statement)
+Call the function (ie, run the code inside the functions code block) using pressPowerButton()
+
+
+WHILE LOOP
+x = 0
+while (x < 12) {
+  console.log(x)
+  x = x + 1      (this is your modification)
+}
+
+1. Define x
+2. create your while statement -- Remember you have to modify x or it will run forever!
+
+//Output: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11
+(if you want it to print up to 12, you have to make it [while (x <= 12)])
+
+FOR LOOP
+for (var i = 0; i <= 12; i++) {
+console.log('i is now ' + i);
+}
+
+i <= 12 is you condition. Here is where you set what stops the loop.
+i++ (alt: i = i + 1, i = i + 2 is looped number)
+
+EXAMPLES
+
+var x = 15;
+if (x <= 10) {
+  alert('Your Variable is less than or equal to 10!');
+} else {
+  console.log('Your variable was ' + x + ', which is greater then 10.');
+}
+
+//Output: Your variable was 15 which is greater than 10

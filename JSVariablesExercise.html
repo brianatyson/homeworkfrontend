@@ -1,0 +1,91 @@
+//* Fortune Teller *//
+var children = 1
+var partner = 'Vicky'
+var geoLocation = "Philadelphia, PA"
+var jobTitle = "Programmer Analyst"
+console.log("You will be " + jobTitle + " in " + geoLocation + " and married to " + partner + " with " + children + " kids.")
+
+
+//* Age Calculator *//
+var birthYear = 1977
+var futureYear = 2030
+var age1 = futureYear1 - birthYear
+var age2 = age1 + 1
+console.log("I will be either " + age1 + " or " + age2 + " in " + futureYear +  ".")
+
+
+//* Lifetime Supply Calculator *//
+var curAge = 39
+var maxAge = 75
+var amt = 5
+var yearLeft = maxAge - curAge
+var total = yearLeft * amt
+console.log("You will need " + total + " to last you until the ripe old age of " + maxAge + ".")
+
+//* Geometrizer *//
+var radius = 25
+var cir = 2 * 3.14 * radius
+var area = 3.14 * radius * radius
+console.log("The circumference is " + cir + ".")
+console.log("The area is " + area + ".")
+
+//* Temperature Converter *//
+var celsius = 32
+var celsius_to_fah = (celsius*9)/5 + 32
+console.log(celsius + "°C is " + celsius_to_fah + "°F")
+
+var fahren = 100
+var fahren_to_cels = (fahren-32)*5 / 9
+console.log(fahren + "°F is " + fahren_to_cels + "°C")
+
+
+Exercise 2
+//* Fortune Teller *//
+function tellFortune(children, partner, local, job) {
+    console.log("You will be a " + job + " in " + local + ", and married to " partner + " with " + children + " kids.")
+}
+
+//* Lifetime Supply *//
+function calculateSupply(age, amtPerDay){
+    var maxAge = 75;
+    var yearLeft = maxAge - age;
+    var totalAmt = amtPerDay * 365;
+    total = yearLeft * totalAmt;
+    total = Math.round(total);
+    console.log("You will need " + total + " to last you until the ripe old age of " + maxAge + ".");
+}
+
+
+
+calculateSupply(15, 8.2);
+calculateSupply(35, 15.3);
+calculateSupply(55, 80.65);
+
+//* The Geometrizer *//
+
+function calcCircumference(number) {
+    var result = Math.PI * 2 * number;
+    return(result)
+}
+calcCircumference(12)
+
+function calcArea (number) {
+    var result = Math.PI * (number * 2);
+    return(result)
+}
+calcArea(12)
+
+
+//* Temperature Converter *//
+
+function celciusToFahrenheit(num1) {
+    var result = (num1 * 9) / 5 + 32;
+    return(result);
+}
+celciusToFahrenheit(32)
+
+function fahrenheitToCelcius(num1) {
+    var result = (num1 - 32) * 5 / 9;
+    return(result)
+}
+fahrenheitToCelcius(89.6)

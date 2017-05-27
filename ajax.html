@@ -1,0 +1,38 @@
+<html>
+  <head>
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"
+      integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+      crossorigin="anonymous"></script>
+
+    <script>
+      $.ajax({
+      type:"GET",
+        url:"https://jsonplaceholder.typicode.com/photos/1",
+        success: function(responsePhoto) {
+          responsePhoto = {
+            "albumId": 1,
+            "id": 1,
+            "title": "accusamus beatae ad facilis cum similique qui sunt",
+            "url": "http://placehold.it/600/92c952",
+            "thumbnailUrl": "http://placehold.it/150/92c952"
+          }
+          //create image in jquery, then add the image to the page
+          console.log(responsePhoto)
+
+          // var somePhotoUrl = 'hello.jpg'
+          // $("<img src='" + somePhotoUrl + "'>")
+          // $("<img src='hello.jpg'>")
+          var photo = $("<img src='" + responsePhoto.url + "'/>")
+          $('#image').html(photo);
+
+        }
+      })
+    </script>
+  </head>
+
+  <body>
+  <div id="image"></div>
+
+
+  </body>
+</html>
