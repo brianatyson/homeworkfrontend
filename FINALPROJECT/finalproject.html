@@ -55,8 +55,8 @@
   </section>
 
   <!---Mobile First--->
-  <div class="mobile-posts">
-      <div class="photostyles" id="photostyles">
+  <div class="mobile-posts" id="photostyles">
+      <div class="photostyles">
         <section class="section2">
           <a href="katespade.png" data-fancybox="group" data-caption="Shoes: Kate Spade Catlyn, Jeans: Zara">
             <img src="katespade.png"/>
@@ -225,23 +225,11 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
 
   <script src="jquery.fancybox.min.js"></script>
-  <script src="jquery.cookie.js"></script>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-scrollTo/2.1.2/jquery.scrollTo.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-localScroll/1.4.0/jquery.localScroll.min.js"></script>
 
-
 <script>
-    $(document).ready(function() {
-    $(Cookie.get('firstname'))
-
-    $('#submit').click(function() {
-      var signup = $('#fname').val()
-        Cookie.set('firstname', signup)
-        console.log('Congratulations ' + signup + '! Welcome to our club!')
-  });
-  });
-
 
   $('.list-unstyled').localScroll();
 
@@ -277,7 +265,6 @@
           e.preventDefault();
         });
       });
-
 
 
 </script>
